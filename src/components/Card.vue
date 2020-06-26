@@ -40,8 +40,9 @@ export default {
 <style lang="scss" scoped>
 .card {
   align-items: center;
-  background-color: #fff;
-  border: 1px solid black;
+  background-color: rgba(var(--bg), 0.25);
+  border: 1px solid var(--primary);
+  border-radius: 0.25rem;
   cursor: pointer;
   display: flex;
   justify-content: center;

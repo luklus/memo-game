@@ -32,6 +32,12 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --base: #003049;
+  --primary: #ef476f;
+  --bg: #fdfffc;
+}
+
 *,
 *::before,
 *::after {
@@ -41,13 +47,16 @@ export default {
 }
 
 html {
+  background-color: var(--bg);
+  color: var(--base);
   font-family: 'MuseoModerno', cursive;
 }
 </style>
 
 <style lang="scss" scoped>
 #memo {
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   padding: 1rem;
   width: 100vw;
 }

@@ -135,7 +135,23 @@ export default {
   &__grid {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 20rem) {
+  .game {
+    &__grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  .game {
+    &__grid {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 }
 </style>
